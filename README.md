@@ -44,24 +44,25 @@ An advantage of UDP was that we also coincidentally overcame the ESP-NOW range l
 I also used mDNS to make it so that the sender and receiver do not require each other's IP addresses when communicating via UDP. With mDNS, you can reach your ESP32’s web server using a simple name like “somethingsomething.local” instead of the jumble of numbers that makes up its IP address. If the ESP32’s IP changes, the hostname still works without any extra setup. The hostname of the sender and receiever can be changed to whatever you wish, however any hostname changes must be the reflected in the partner device's code. 
 
 ## Installation notes
-+Upload the sender and reciever codes onto seperate esp32 with the Arduino IDE. Be sure to modify the preprocessor directive space where it reads
++ Upload the sender and reciever codes onto seperate esp32 with the Arduino IDE. Be sure to modify the preprocessor directive space where it reads
 ```
 const char* ssid = "***Name***";
 const char* password =  "***Password***";
 ```
 Ensure the bold and italic characters are replaced with your network's credentials.
 You can also manually change the cooldown on the sender code to change the allowed interval between messages. 
-'''
+```
 const int cooldown = 1000; //Set maximum cooldown between transmissions
-'''
+```
 I set it to 1 second in the code provided for testing purposes. Feel free to extend it.
 I also set the reciever web page interface address as "commsys.local". This can again be changed in the receiever code, but be sure to make the same name change in the sender code. For example the following will create a web page at Whateveryouwant.local
-'''
+
+```
   while(!MDNS.begin("Whateveryouwant")) {
     Serial.println("Starting mDNS...");
     delay(1000);
   }
-'''
+```
 + Solder all the peripherals according to the pins defined within the code. For the LCD display connect D22 to SCL, and D21 to SDA.
 + I'm powering the sender using a [18650 battery shield] (amazon.co.uk/AZDelivery-Lithium-Li-ion-Battery-Expansion/dp/B086W7326Q/) (Not the exact link, I'm using the 2 battery version). The receiever is powered using a type C to DIP adaptor and a wall AC/DC adaptor providing 5V.
 + 3D print the casings for both devices. Attach the battery shield to the sender using heat set inserts and M3 screws. The sender uses a snap mechanism to click together after everything is installed. The reciever uses M3 screws for the LCD display and buzzer, and M2 screws for the perfboard. Heat set inserts are used to install the buzzer. 
