@@ -35,6 +35,9 @@ We ended up with the second design owing to its simplicity, with some modificati
 
 ![IMG_8197](https://github.com/user-attachments/assets/c69aa577-7ecb-45ad-bcdb-91c3738cefe3)
 
+![IMG_8198](https://github.com/user-attachments/assets/46477b55-d063-41dc-ad41-5badd26bf711)
+
+
 First, due to the THT buttons on the receievers malfunctioning after soldering, I took the creative liberty to design a HTML page with buttons for the staff to interact with the sender device. However it was found that the web server functionality was incompatible with the ESP-NOW protocol. I fixed this issue by utilising the ESP32 user datagram protocol (UDP). 
 
 UDP (User Datagram Protocol) is like sending a postcard in the mail. You write your message and send it straight to the recipient. It’s quick and simple, but there’s no guarantee it arrives, arrives in order, or arrives at all, unlike TCP (transmission control protocol), UDP just sends the message and moves on.
