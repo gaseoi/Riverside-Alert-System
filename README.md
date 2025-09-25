@@ -64,7 +64,7 @@ I also set the reciever web page interface address as "commsys.local". This can 
   }
 ```
 + Solder all the peripherals according to the pins defined within the code. For the LCD display connect D22 to SCL, and D21 to SDA.
-+ I'm powering the sender using a [18650 battery shield] (amazon.co.uk/AZDelivery-Lithium-Li-ion-Battery-Expansion/dp/B086W7326Q/) (Not the exact link, I'm using the 2 battery version). The receiever is powered using a type C to DIP adaptor and a wall AC/DC adaptor providing 5V.
++ I'm powering the sender using a [18650 battery shield](amazon.co.uk/AZDelivery-Lithium-Li-ion-Battery-Expansion/dp/B086W7326Q/) (Not the exact link, I'm using the 2 battery version). The receiever is powered using a type C to DIP adaptor and a wall AC/DC adaptor providing 5V.
 + 3D print the casings for both devices. Attach the battery shield to the sender using heat set inserts and M3 screws. The sender uses a snap mechanism to click together after everything is installed. The reciever uses M3 screws for the LCD display and buzzer, and M2 screws for the perfboard. Heat set inserts are used to install the buzzer. 
 
 ## Use instructions
@@ -74,7 +74,7 @@ I also set the reciever web page interface address as "commsys.local". This can 
 4. Pressing the respond button will cause the receiever device to play a different note, allowing staff to respond. Refreshing the web page now should show all is well. 
 
 ## Final notes
-+ Ensure you have installed all the dependent libraries. Wifi.h and ESPmDNS should be part of the ESP32 add on. [Here is a helpful tutorial if you get stuck.] (https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
++ Ensure you have installed all the dependent libraries. Wifi.h and ESPmDNS should be part of the ESP32 add on. [Here is a helpful tutorial if you get stuck.](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
 
 ## Acknowledgements
 Special thanks to project impactive organisers.
