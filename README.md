@@ -44,7 +44,7 @@ UDP (User Datagram Protocol) is like sending a postcard in the mail. You write y
 
 An advantage of UDP was that we also coincidentally overcame the ESP-NOW range limit. Now, the sender and reciever can be as far apart as we like, as long as they're both connected to the same network. 
 
-I also used mDNS to make it so that the sender and receiver do not require each other's IP addresses when communicating via UDP. With mDNS, you can reach your ESP32’s web server using a simple name like “somethingsomething.local” instead of the jumble of numbers that makes up its IP address. If the ESP32’s IP changes, the hostname still works without any extra setup. The hostname of the sender and receiever can be changed to whatever you wish, however any hostname changes must be the reflected in the partner device's code. 
+I also used mDNS (multicast DNS) to make it so that the sender and receiver do not require each other's IP addresses when communicating via UDP. With mDNS, you can reach your ESP32’s web server using a simple name like “somethingsomething.local” instead of the jumble of numbers that makes up its IP address. If the ESP32’s IP changes, the hostname still works without any extra setup. The hostname of the sender and receiever can be changed to whatever you wish, however any hostname changes must be the reflected in the partner device's code. 
 
 ## Installation notes
 + Upload the sender and reciever codes onto seperate esp32 with the Arduino IDE. Be sure to modify the preprocessor directive space where it reads
