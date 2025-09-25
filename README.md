@@ -16,7 +16,7 @@ Table of user requirements:
 | ------------- | ------------- |
 | Must have easy to push buttons with clear labels  | Two-way feedback system  |
 | Audio feedback after button has been pushed | Indication of sender position  |
-| integrated limit to prevent button spamming | Mains-powered and attached to wall or table  |
+| Integrated limit to prevent button spamming | Mains-powered and attached to wall or table  |
 | Battery powered |   |
 
 ## initial design sketches
@@ -77,7 +77,7 @@ I also set the reciever web page interface address as "commsys.local". This can 
 4. Pressing the respond button will cause the receiever device to play a different note, allowing staff to respond. Refreshing the web page now should show all is well. 
 
 ## Final notes
-+ Ensure you have installed all the dependent libraries. Wifi.h and ESPmDNS should be part of the ESP32 add on. [Here is a helpful tutorial if you get stuck.](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
++ Ensure you have installed all the dependent libraries. Wifi.h and ESPmDNS.h should be part of the ESP32 add on. [Here is a helpful tutorial if you get stuck.](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
 
 ## Acknowledgements
 Special thanks to project impactive organisers.
