@@ -49,8 +49,8 @@ I also used mDNS (multicast DNS) to make it so that the sender and receiver do n
 ## Installation notes
 + Upload the sender and reciever codes onto seperate esp32 with the Arduino IDE. Be sure to modify the preprocessor directive space where it reads
 ```
-const char* ssid = "***Name***";
-const char* password =  "***Password***";
+const char* ssid = "Name";
+const char* password =  "Password";
 ```
 Ensure the bold and italic characters are replaced with your network's credentials.
 You can also manually change the cooldown on the sender code to change the allowed interval between messages. 
