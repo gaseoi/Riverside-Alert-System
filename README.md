@@ -71,14 +71,16 @@ I also set the reciever web page interface address as "commsys.local". This can 
 + 3D print the casings for both devices. Attach the battery shield to the sender using heat set inserts and M3 screws. The sender uses a snap mechanism to click together after everything is installed. The reciever uses M3 screws for the LCD display and buzzer, and M2 screws for the perfboard. Heat set inserts are used to install the buzzer. 
 
 ## Use instructions
-1. Staff should connect to the web page listed in the LCD. Staff must be connected to the same network as the communication device to interact with it.
+1. Staff should connect to the web page listed in the LCD (commsys.local by default) using any web browser. Staff must be connected to the same network as the communication device to interact with it.
 2. When the resident presses one of the buttons sender, both sender and reciever devices should play a note, prompting the staff to connect and refresh the web page and providing feedback to the resident that the device is indeed working as intended.
 3. Web page will display the button pressed by the resident, and prompt the staff to respond by allowing them to press the respond button.
-4. Pressing the respond button will cause the receiever device to play a different note, allowing staff to respond. Refreshing the web page now should show all is well. 
+4. Pressing the respond button will cause the receiever device to play a different note, allowing staff to respond. Refreshing the web page now should show all is well.
+5. The sender has a red cancel button to cancel any requests. 
 
 ## Final notes
 + Ensure you have installed all the dependent libraries. Wifi.h and ESPmDNS.h should be part of the ESP32 add on. [Here is a helpful tutorial if you get stuck.](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
++ The battery shield allows sender device operation with/without the 18650 batteries as long as its plugged in. Please handle lipo batteries with care.
 
 ## Acknowledgements
-Special thanks to project impactive organisers.
-I am also very grateful to the care home staff and residents for their patience with our questions. 
+Special thanks to Project Impactive organisers, especially Rozenn Raffaut for assistance with casing 3D printing.
+I am also very grateful to the care home staff and residents for their patience with our questions. It has been a pleasure collaborating with you.
